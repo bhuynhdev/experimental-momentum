@@ -14,6 +14,6 @@ export function PageStageSwitcher(props: PageStageSwitcherProps) {
   const pageStage = validatePageStage(pageStageFromHeader);
   return <div>
     Page stage: {pageStage}
-    {props[pageStage]}
+    {props[pageStage] || props.default}
   </div>
 }
